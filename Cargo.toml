@@ -1,0 +1,10 @@
+[package]
+name = "stockject"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alpha_vantage = "0.11.0"
+tokio = {version = "1.42.0", features = ["full"]}
+reqwest = "0.12.9"
+clap = {version = "4.5.23", features = ["derive"]}
