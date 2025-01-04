@@ -125,12 +125,12 @@ fn profit_calculation(queries: &Vec<Query>, prices: &Vec<f64>) {
     println!("Average market total stock price (inc. amount) => {market_totalprice_mean}\n");
 
     println!(
-        "Average profit (exc. amount)=> {}",
+        "Average profit (exc. amount) => {}",
         (market_baseprice_mean - user_baseprice_mean)
     );
 
     println!(
-        "Average profit (inc. amount)=> {}",
+        "Average profit (inc. amount) => {}",
         (market_totalprice_mean - user_totalprice_mean)
     );
 }
