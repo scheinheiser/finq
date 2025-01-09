@@ -42,7 +42,7 @@ pub struct Query {
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
     let cli = StockCli::parse();
-    let api = alpha_vantage::set_api("LHBJUSM137M15SBF", reqwest::Client::new());
+    let api = alpha_vantage::set_api("your-api-key-here", reqwest::Client::new());
 
     match &cli.command {
         QueryOptions::Init => {
